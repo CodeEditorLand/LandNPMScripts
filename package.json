@@ -1,9 +1,32 @@
 {
 	"name": "@codeeditorland/npm-script",
 	"displayName": "npm",
+	"version": "0.0.1",
+	"private": false,
 	"description": "npm support for VS Code",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandNPMScripts#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandNPMScripts/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandNPMScripts.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./dist/extension",
 	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"webpack": "webpack --mode development",
 		"webpack-dev": "webpack --mode development --watch"
 	},
@@ -228,8 +251,12 @@
 		"tree-kill": "1.2.2"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/node": "22.13.14",
 		"ts-loader": "9.5.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"icon": "npm_icon.png",
 	"capabilities": {
