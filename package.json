@@ -251,7 +251,7 @@
 		"tree-kill": "1.2.2"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"@types/node": "22.14.0",
 		"ts-loader": "9.5.2"
 	},
