@@ -1,34 +1,34 @@
 {
-	"activationEvents": [
-		"onCommand:npm-script.showKeybindingsChangedWarning",
-		"onCommand:npm-script.install",
-		"onCommand:npm-script.run",
-		"onCommand:npm-script.showOutput",
-		"onCommand:npm-script.rerun-last-script",
-		"onCommand:npm-script.terminate-script",
-		"onCommand:npm-script.test",
-		"onCommand:npm-script.start",
-		"onCommand:npm-script.audit",
-		"onCommand:npm-script.outdated",
-		"onCommand:npm-script.init"
+	"name": "@codeeditorland/npm-script",
+	"displayName": "npm",
+	"version": "0.0.1",
+	"private": false,
+	"description": "npm support for VS Code",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
 	],
-	"author": {
-		"email": "Source/Open@Editor.Land",
-		"name": "Source 🖋️ Open 👐🏻",
-		"url": "HTTPS://Editor.Land"
-	},
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandNPMScripts#readme",
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandNPMScripts/issues"
 	},
-	"capabilities": {
-		"untrustedWorkspaces": {
-			"description": "The extension requires workspace trust because it runs npm scripts from the workspace.",
-			"supported": false
-		},
-		"virtualWorkspaces": {
-			"description": "Npm scripts running is not possible in virtual workspaces.",
-			"supported": false
-		}
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandNPMScripts.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
+	"main": "./dist/extension",
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch"
 	},
 	"contributes": {
 		"commands": [
@@ -232,41 +232,41 @@
 			]
 		}
 	},
+	"activationEvents": [
+		"onCommand:npm-script.showKeybindingsChangedWarning",
+		"onCommand:npm-script.install",
+		"onCommand:npm-script.run",
+		"onCommand:npm-script.showOutput",
+		"onCommand:npm-script.rerun-last-script",
+		"onCommand:npm-script.terminate-script",
+		"onCommand:npm-script.test",
+		"onCommand:npm-script.start",
+		"onCommand:npm-script.audit",
+		"onCommand:npm-script.outdated",
+		"onCommand:npm-script.init"
+	],
 	"dependencies": {
 		"jsonc-parser": "3.3.1",
 		"run-in-terminal": "0.0.3",
 		"tree-kill": "1.2.2"
 	},
-	"description": "npm support for VS Code",
 	"devDependencies": {
 		"@playform/build": "0.2.3",
 		"@types/node": "22.14.0",
 		"ts-loader": "9.5.2"
 	},
-	"displayName": "npm",
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandNPMScripts#readme",
-	"icon": "npm_icon.png",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"license": "SEE LICENSE IN LICENSE",
-	"main": "./dist/extension",
-	"name": "@codeeditorland/npm-script",
-	"private": false,
 	"publishConfig": {
 		"access": "public"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/LandNPMScripts.git"
-	},
-	"scripts": {
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"webpack": "webpack --mode development",
-		"webpack-dev": "webpack --mode development --watch"
-	},
-	"type": "module",
-	"version": "0.0.1"
+	"icon": "npm_icon.png",
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"description": "The extension requires workspace trust because it runs npm scripts from the workspace.",
+			"supported": false
+		},
+		"virtualWorkspaces": {
+			"description": "Npm scripts running is not possible in virtual workspaces.",
+			"supported": false
+		}
+	}
 }
