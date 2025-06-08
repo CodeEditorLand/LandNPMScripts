@@ -257,21 +257,21 @@
 		"lint": "eslint -c .eslintrc.js --ext .ts src/*.ts"
 	},
 	"devDependencies": {
-		"@types/mocha": "^2.2.32",
-		"@types/node": "^7.0.43",
-		"@types/vscode": "^1.66.0",
-		"@typescript-eslint/eslint-plugin": "^2.18.0",
-		"@typescript-eslint/parser": "^2.18.0",
-		"eslint": "^8.0.1",
-		"ts-loader": "^9.2.6",
-		"typescript": "^4.4.4",
-		"webpack": "^5.58.2",
-		"webpack-cli": "^4.9.1",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^22.15.30",
+		"@types/vscode": "^1.100.0",
+		"@typescript-eslint/eslint-plugin": "^8.33.1",
+		"@typescript-eslint/parser": "^8.33.1",
+		"eslint": "^9.28.0",
+		"ts-loader": "^9.5.2",
+		"typescript": "^5.8.3",
+		"webpack": "^5.99.9",
+		"webpack-cli": "^6.0.1",
 		"vscode-test": "^1.6.1"
 	},
 	"dependencies": {
-		"jsonc-parser": "^2.1.0",
-		"run-in-terminal": "^0.0.2",
+		"jsonc-parser": "^3.3.1",
+		"run-in-terminal": "^0.0.3",
 		"tree-kill": "^1.2.2"
 	}
 }
